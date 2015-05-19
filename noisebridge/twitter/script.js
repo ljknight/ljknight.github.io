@@ -43,6 +43,9 @@ $('form').on('submit', function(event) {
   //clear the text area after you submit a tweet:
   textArea.val('');
   
+  //reset tweet counter
+  tweetCounter.text('140');
+  
 });
 
 /* this listens for button clicks within the tweets class. if you do just $('button').on then when the page loads it only see the existing buttons and not any new buttons that are added with new tweets */
