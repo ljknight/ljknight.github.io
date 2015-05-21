@@ -30,6 +30,10 @@ body {
 	width: 100%;
 }
 
+.container-fluid {
+  padding-left: 11px;
+}
+
 /*.navbar .img-circle {
   height: 50px;
   width: 50px;
@@ -42,20 +46,20 @@ body {
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-  color: white;
-  text-decoration: underline;
+  color: #B6C7E3;
 }
 
 .navbar li {
 	margin-top: 7px;
 }
 
-.lk {
+.navbar li:first-child {
   border-right: 1px solid white;
   font-style: normal;
   font-weight: bold;
-  line-height: 50px;
-  padding-right: 15px;
+  line-height: 20px;
+  margin: 15px 15px 8px 0px;
+  padding: 7px 30px 7px 0px;
 }
 
 .jumbotron {
@@ -85,16 +89,6 @@ h1 {
 	margin: 0;
 }
 
-.info-section {
-	-webkit-column-count: 2;
-	-moz-column-count: 2;
-	-column-count: 2;
-
-	-webkit-column-gap: 50px;
-	-moz-column-gap: 50px;
-	-column-gap: 50px;
-}
-
 .page-header {
   border-bottom: 1px solid gray;
   margin-top: 80px;
@@ -108,16 +102,33 @@ h1 {
 
 p, li {
   font-size: 1.1em;
-  line-height: 1.75;
+  line-height: 1.6;
 }
 
-.projects-container span {
-  display: block;
-  font-weight: bold;
+.col-sm-6:first-child, .contact .col-sm-4:first-child {
+  padding: 0px 25px 0px 0px;
+}
+
+.col-sm-6:nth-child(2), .contact .col-sm-4:nth-child(2) {
+  padding: 0px 0px 0px 25px;
 }
 
 .goals-container, .projects-container {
   background-color: #B6C7E3;
+}
+
+.goals-container ul {
+  padding-left: 17px;
+}
+
+.goals-container li {
+  padding-bottom: 10px;
+}
+
+.projects-container span {
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 /*.optimizely-container {
@@ -128,18 +139,19 @@ p, li {
   margin: 40px 0 90px;
 }
 
-.row ul, .contact ul {
+.projects-container .col-sm-4 {
+  padding: 0px 25px;
+}
+
+.projects-container ul, .contact ul, .footer ul {
   list-style: none;
   padding: 0;
 }
 
-.row {
-  text-align: center;
-}
-
-.row img {
+.projects-container img {
+  display: block;
   height: 128px;
-  margin-bottom: 15px;
+  margin: 0px auto 15px;
   width: 128px;
 }
 
@@ -163,11 +175,6 @@ img.desaturate:hover {
 	color: white;
 	padding: 50px;
 	text-align: center;
-}
-
-.footer ul {
-  list-style: none;
-  padding: 0;
 }
 
 .footer li {
