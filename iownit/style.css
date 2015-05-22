@@ -100,17 +100,25 @@ h1 {
   width: 128px;
 }
 
+.row {
+  margin: 40px 0 90px;
+}
+
 p, li {
   font-size: 1.1em;
   line-height: 1.6;
 }
 
+.about p {
+  padding-bottom: 10px;
+}
+
 .col-sm-6:first-child, .contact .col-sm-4:first-child {
-  padding: 0px 25px 0px 0px;
+  padding: 0px 35px 0px 0px;
 }
 
 .col-sm-6:nth-child(2), .contact .col-sm-4:nth-child(2) {
-  padding: 0px 0px 0px 25px;
+  padding: 0px 0px 0px 35px;
 }
 
 .goals-container, .projects-container {
@@ -131,16 +139,18 @@ p, li {
   font-weight: bold;
 }
 
-/*.optimizely-container {
-  background-color: #99CC85;
-}*/
+/* projects-container column padding */
 
-.info-section, .row, .contact {
-  margin: 40px 0 90px;
+.first .col-sm-4 {
+  padding: 0 35px 0 0;
 }
 
-.projects-container .col-sm-4 {
-  padding: 0px 25px;
+.second .col-sm-4 {
+  padding: 0 17.5px 0;
+}
+
+.third .col-sm-4 {
+  padding: 0 0 0 35px;
 }
 
 .projects-container ul, .contact ul, .footer ul {
@@ -151,7 +161,7 @@ p, li {
 .projects-container img {
   display: block;
   height: 128px;
-  margin: 0px auto 15px;
+  margin: 0px auto 30px;
   width: 128px;
 }
 
