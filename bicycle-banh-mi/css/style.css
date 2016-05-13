@@ -1,0 +1,62 @@
+.carousel-image-1 {
+  background-image: url(../assets/bbm1.jpg);
+}
+
+.carousel-image-2 {
+  background-image: url(../assets/bbm2.jpg);
+}
+
+.carousel-image-3 {
+  background-image: url(../assets/bbm3.jpg);
+}
+
+.btn-menu {
+  border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .dropdown {
+    left: 6%;
+    position: absolute;
+    top: 6%;
+    z-index: 1;
+  }
+
+  .carousel-image-1, .carousel-image-2, .carousel-image-3 {
+    background-position: center center;
+    height: 100vh;
+  }
+
+  .btn-menu {
+    min-height: 80px;
+    min-width: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  .dropdown {
+    right: 20%;
+    position: absolute;
+    top: 8%;
+    z-index: 1;
+  }
+
+  .btn-menu {
+    border-radius: 50%;
+    height: 10vw;
+    max-height: 300px;
+    max-width: 300px;
+    width: 10vw;
+  }
+
+  .carousel-inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .carousel-image-1, .carousel-image-2, .carousel-image-3 {
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+}
