@@ -20,12 +20,30 @@
   transform: scale(1.0);
 }
 
+.caption-container {
+  position: relative;
+  height: 100%;
+}
+
+.caption {
+  bottom: 0;
+  position: absolute;
+  width: 80%;
+}
+
+.row {
+  height: 100vh;
+}
+
+.caption:not(#caption-0) {
+  display: none;
+}
+
 /* used for images entering/leaving */
 .left .carousel-image, .right .carousel-image {
   opacity: 0.7;
   transform: scale(0.9);
 }
-
 
 .btn-menu {
   border-radius: 50%;
